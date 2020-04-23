@@ -5,7 +5,7 @@ Encrypt secrets using libsodium sealed boxes, via [sodiumoxide](https://docs.rs/
 Takes one argument: a base64-encoded public key. Reads the secret value from stdin. It sends to stdout the base64-encoded result of encrypting the input with the public key.
 
 ```shell
-echo "it's a secret to everyone" | octosecret <b64-encoded-public-key> <<<
+printf "it's a secret to everyone" | octosecret <b64-encoded-public-key>
 ```
 
 If you have administrative access to a github repo plus an api token handy, you can fetch its public key like this:
